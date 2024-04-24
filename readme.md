@@ -1,8 +1,31 @@
 ## Hackathon Instructions
 
 Make sure to use the comments in the files to complete the hackathon
+# Description
+ This project is a random generator for dog pictures, student details, and interesting facts. It is built using Django  on Replit.
 
-## Structure of the Assignment
+# How to Run Locally
+To run this project locally, follow these steps:
+
+# 1. Clone the Repository
+bash
+Copy code
+<> git clone [<repository-url>](https://github.com/amuybar/ApiBuilding.git)
+
+#2. Install Dependencies
+Ensure you have Python and pip installed on your system. Then, navigate to the project directory and install the required packages:
+
+Copy code
+<>pip install django
+
+<>pip install requests
+
+# 3. Run the Server
+Copy code
+<>python manage.py runserver
+
+ 
+# Structure of the Assignment
 It contains [5] pages  
 
     <>[Error.html] ---->this is a error fallback page such that when we cant fetch the desired page we fall back to this page.  
@@ -30,6 +53,6 @@ It contains [5] pages
 
 #Screenshot of the Random Student Page
 <div style="display: flex; align-items: center;">
-  <img src="/static/readme_images/student_small.png" alt="Random Student Page" width="400" style="margin-right: 20px;">
+  <img src="/static/readme_images/image_3.png" alt="Random Student Page" width="400" style="margin-right: 20px;">
   <p>This page displays random student details.</p>
 </div>
