@@ -21,10 +21,7 @@ def fact_view(request):
    fact_data = res_fact.json()
    fact = fact_data['text']
    return render(request, 'templates/randomfact.html', 
-                 {
-                   'fact': fact,
-                  }
-                )
+                 { 'fact': fact,"fact_count":fact_count } )
 def generate_facts(request):
   global fact_count
   fact_count +=1
@@ -45,7 +42,7 @@ def dog_view(request):
     dog_data = res_dog.json()
     dog = dog_data['message']
     return render(request, 'templates/randompic.html',
-                  {'dog': dog})
+                  {'dog': dog,"pic_count":pic_count})
 def generete_dog(request):
   global pic_count
   pic_count +=1
