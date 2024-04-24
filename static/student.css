@@ -1,0 +1,82 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  align-items:center;
+  justify-content:center;
+  font-family: Arial, sans-serif;
+   background: linear-gradient(to bottom, transparent, transparent); 
+}
+
+.navbar {
+  background-color: #ffffff; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.back-button {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.elevated-button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px;
+  width:400px;
+   margin:10px auto;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.student-card {
+  background-color: #fff;
+  padding: 20px;
+  width:400px;
+   margin:10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.spin-count-card {
+  background-color: #fff;
+  padding: 20px;
+  width:100px;
+  height:100px;
+   margin:10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+form {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; 
+}

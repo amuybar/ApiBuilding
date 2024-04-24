@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'facts.css'%}">
+  <title>Facts</title>
+  <!--Small script to help with page reeload towards generatioon of new content  -->
+  <script>
+  function generateRandomFacts() {
+          fetch('/generate_facts/')  // Call the URL mapped to generate_random_student view
+          .then(response => response.text()) 
+          .then(html => {
+              document.open();
+              document.write(html);
+              document.close();
+          });
+      }
+   
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="back-button" href="/">Back</a>
+    <h1>Random Fact</h1>
+  </nav>
+
+  <div class="body-content">
+     <button class="elevated-button" onclick="generateRandomFacts()">Press Here to generate random Factts qoutes</button>
+    <div class="fact-card">
+      <p>{{fact}}</p>
+    </div>
+    <div class="spin-count-card">
+      <p>Randoms Spun: {{fact_count}}</p>
+    </div>
+  </div>
+</body>
+</html>

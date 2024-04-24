@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'dog.css'%}">
+  <title>Random Photos</title>
+  <!--A very small script to help refresh so we can get random detailsa  -->
+  <script>
+    function generatePics() {
+            fetch('/generate_dogs/')  // Call the URL mapped to generate_random_student view
+            .then(response => response.text())  // Extract the response text
+            .then(html => {
+                // Replace the current page content with the response HTML
+                document.open();
+                document.write(html);
+                document.close();
+            });
+        }
+    </script>
+</head>
+ 
+<body>
+  <nav class="navbar">
+    <a class="back-button" href="/">Back</a>
+    <h1>Random Pictures</h1>
+  </nav>
+
+  <div class="body-content">
+
+    <button class="elevated-button" onclick="generatePics()">Press Here to generate random Dog Pictures</button>
+    <div class="image-card">
+      <img src="{{dog}}" alt="">
+    </div>
+    <div class="spin-count-card">
+      <p>Randoms Spun: {{pic_count}}</p>
+    </div>
+  </div>
+</body>
+</html>

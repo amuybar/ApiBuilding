@@ -1,29 +1,34 @@
-{% load static%}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css'%}">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Barrack Amuyunzu</title>
+
 </head>
 <body>
+    <div class="content">
+  <h1>Random Assignment @ PLP</h1>
 
-  <!-- Using CSS, style the random fact, Random Student, & Random Image -->
-  <!-- Use your own colors create cards for the random facts and students,  -->
-  <!-- Pro Tip: You can use multiple pages -->
-  <!-- Pro Tip: Impliment a  refresh/reload button in every page  -->
-  <h1>Random Fact</h1>
-  {{fact}}
+    <div class="card">
+      <a href="{% url 'fact_view' %}" class="elevated-button">Random Fact</a>
+    </div>
 
-  <h1>Random Student</h1>
-  {{name}}
+    <div class="card">
+      <a href="{% url 'dog_view' %}" class="elevated-button">Random Dog Picture</a>
+    </div>
 
+    <div class="card">
+      <a href="{% url 'random_student' %}" class="elevated-button">Random Student</a>
+    </div>
+  </div>
 
-  <h1>Random Image</h1>
-
-  <img src="{{dog}}" alt="">
-  <!-- {{dog}} -->
+  <div class="bottom-panel">
+    <a href="https://github.com/amuybar?tab=repositories" class="github-link">GitHub</a>
+    <footer>&copy; PLP Hackthon Assignment</footer>
+  </div>
 </body>
 </html>
