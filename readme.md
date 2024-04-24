@@ -12,6 +12,7 @@ To run this project locally, follow these steps:
 # 1. Clone the Repository
 ```bash
   git clone https://github.com/amuybar/ApiBuilding.git
+```
 
 #2. Install Dependencies
 Ensure you have Python and pip installed on your system. Then, navigate to the project directory and install the required packages:
