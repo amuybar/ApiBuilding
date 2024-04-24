@@ -8,6 +8,9 @@ body {
 .content {
     text-align: center;
     padding: 20px;
+    align-content:center;
+    justify-content:center;
+  
 }
 
 .card {
@@ -16,17 +19,23 @@ body {
 }
 
 .elevated-button {
-    background-color: #4CAF50;
+  background-color: #45a049;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+  font-weight:bold;
+    margin: 50% auto;
     cursor: pointer;
     border-radius: 8px;
+}
+.elevated-button:hover{
+
+  background-color: #0024b3;
+  
 }
 
 .bottom-panel {
