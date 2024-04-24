@@ -22,6 +22,8 @@ body {
 
 .back-button {
   color: #fff;
+  border:1px solid #fff;
+    padding:10px;
   text-decoration: none;
 }
 
@@ -33,6 +35,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom:20px;
   transition: background-color 0.3s ease;
 }
 
@@ -53,7 +56,9 @@ body {
   background-color: #fff;
   padding: 20px;
   width:400px;
-   margin:10px auto;
+   height:400px;
+  align-self:center;
+   margin:5% auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }

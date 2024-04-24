@@ -18,18 +18,18 @@ It contains [5] pages
 
 #Screenshot of the Index Page
 <div style="display: flex; align-items: center;">
-  <img src="/static/readme_images/image.png" alt="Index Page" width="200" style="margin-right: 20px;">
+  <img src="/static/readme_images/image.png" alt="Index Page" width="400" style="margin-right: 20px;">
   <p>This is the core page of the project.</p>
 </div>
 
 #Screenshot of the Random Dog Page
 <div style="display: flex; align-items: center;">
-  <img src="/static/readme_images/image_2.png" alt="Random Dog Page" width="200" style="margin-right: 20px;">
+  <img src="/static/readme_images/image_2.png" alt="Random Dog Page" width="400" style="margin-right: 20px;">
   <p>This page displays random dog images.</p>
 </div>
 
 #Screenshot of the Random Student Page
 <div style="display: flex; align-items: center;">
-  <img src="/static/readme_images/student_small.png" alt="Random Student Page" width="200" style="margin-right: 20px;">
+  <img src="/static/readme_images/student_small.png" alt="Random Student Page" width="400" style="margin-right: 20px;">
   <p>This page displays random student details.</p>
 </div>
