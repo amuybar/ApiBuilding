@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="{% static 'weather.css' %}">
+   <!--Small script to help with page reeload towards generatioon of new content  -->
+   <script>
+    function generateweather() {
+            fetch('/get_weather/')  // Call the URL mapped to generate_random_weather cities view
+            .then(response => response.text()) 
+            .then(html => {
+                document.open();
+                document.write(html);
+                document.close();
+            });
+        }
+     
+    </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a class="back-button" href="/">Back</a>
+      <h1>Weather App</h1>
+    </nav>
+  
+    <div class="body-content">
+      <button class="elevated-button" onclick="generateweather()">Press Here to get Weather for different cities</button>
+      <div class="weather-card">
+        <h1>Current Weather in {{ weather.location.name }}</h1>
+      <p><strong>Location:</strong> {{ weather.location.name }}, {{ weather.location.region }}, {{ weather.location.country }}</p>
+      <p><strong>Local Time:</strong> {{ weather.location.localtime }}</p>
+      
+      <h2>Current Conditions</h2>
+      <p><strong>Temperature:</strong> {{ weather.current.temp_c }}°C ({{ weather.current.temp_f }}°F)</p>
+      <p><strong>Condition:</strong> {{ weather.current.condition.text }}</p>
+      <img src="{{ weather.current.condition.icon }}" alt="Weather Icon">
+      <p><strong>Wind:</strong> {{ weather.current.wind_kph }} km/h, {{ weather.current.wind_dir }}</p>
+      <p><strong>Pressure:</strong> {{ weather.current.pressure_mb }} mb</p>
+      <p><strong>Precipitation:</strong> {{ weather.current.precip_mm }} mm</p>
+      <p><strong>Humidity:</strong> {{ weather.current.humidity }}%</p>
+      <p><strong>Cloudiness:</strong> {{ weather.current.cloud }}%</p>
+      <p><strong>Feels Like:</strong> {{ weather.current.feelslike_c }}°C ({{ weather.current.feelslike_f }}°F)</p>
+      <p><strong>Visibility:</strong> {{ weather.current.vis_km }} km ({{ weather.current.vis_miles }} miles)</p>
+      <p><strong>UV Index:</strong> {{ weather.current.uv }}</p>
+      <p><strong>Gust:</strong> {{ weather.current.gust_kph }} km/h</p>
+  
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

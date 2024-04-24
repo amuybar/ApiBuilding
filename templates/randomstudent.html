@@ -22,27 +22,29 @@
     </script>
 </head>
 <body>
+ <div class="container">
   <nav class="navbar">
-      <a class="back-button" href="/">Back</a>
+    <a class="back-button" href="/">Back</a>
+    <h1>Random Student Details</h1>
+</nav>
+
+<div class="body-content">
+  <!-- Geting the student passed from the view so that we can access its values -->
+  <button class="elevated-button" onclick="generateRandomStudent()">Press Here to generate random student</button>
+
+    <div class="student-card">
       <h1>Random Student Details</h1>
-  </nav>
-
-  <div class="body-content">
-    <!-- Geting the student passed from the view so that we can access its values -->
-    <button class="elevated-button" onclick="generateRandomStudent()">Press Here to generate random student</button>
-
-      <div class="student-card">
-        <h1>Random Student Details</h1>
-          <p>Name: {{ student.name }}</p>
-          <p>Age: {{ student.age }}</p>
-          <p>Gender: {{ student.gender }}</p>
-          <p>Email: {{ student.email}}</p>
-          <p>Phone: {{ student.phone}}</p>
-          
-      </div>
-      <div class="spin-count-card">
-     <p>Refresh Count: {{ refresh_count}}</p>
-      </div>
-  </div>
+        <p>Name: {{ student.name }}</p>
+        <p>Age: {{ student.age }}</p>
+        <p>Gender: {{ student.gender }}</p>
+        <p>Email: {{ student.email}}</p>
+        <p>Phone: {{ student.phone}}</p>
+        
+    </div>
+    <div class="spin-count-card">
+   <p>Refresh Count: {{ refresh_count}}</p>
+    </div>
+</div>
+ </div>
 </body>
 </html>

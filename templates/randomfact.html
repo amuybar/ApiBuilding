@@ -23,22 +23,22 @@
 </head>
 <body>
   <div class="container">
-  <nav class="navbar">
-    <a class="back-button" href="/">Back</a>
-    <h1>Random Fact</h1>
-  </nav>
-
-  <div class="body-content">
-     <button class="elevated-button" onclick="generateRandomFacts()">Press Here to generate random Factts qoutes</button>
-    <div class="fact-card">
-      <h2>Fact Quote:  {{fact.text}}</h2>
-       <h3>Fact Source:  {{fact.source}}</h3>
-      <p>Source URL: <a href='{{fact.source_url}}'>fact link</a> </p>
-    </div>
-    <div class="spin-count-card">
-      <p>Randoms Spun: {{fact_count}}</p>
+    <nav class="navbar">
+      <a class="back-button" href="/">Back</a>
+      <h1>Random Fact</h1>
+    </nav>
+  
+    <div class="body-content">
+       <button class="elevated-button" onclick="generateRandomFacts()">Press Here to generate random Factts qoutes</button>
+      <div class="fact-card">
+        <h2>Fact Quote:  {{fact.text}}</h2>
+         <h3>Fact Source:  {{fact.source}}</h3>
+        <p>Source URL: <a href='{{fact.source_url}}'>fact link</a> </p>
+      </div>
+      <div class="spin-count-card">
+        <p>Randoms Spun: {{fact_count}}</p>
+      </div>
     </div>
   </div>
-    </div>
 </body>
 </html>

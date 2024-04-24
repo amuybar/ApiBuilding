@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <title>Barrack Amuyunzu</title>
+    <title>Assignment For Barrack</title>
 
 </head>
 <body>
-    <div class="content">
-  <h1>Random Assignment @ PLP</h1>
+  <div class="content">
+  <h1>Hackathon Assignment @ PLP</h1>
 
     <div class="card">
       <a href="{% url 'fact_view' %}" class="elevated-button">Random Fact</a>
@@ -24,8 +24,13 @@
     <div class="card">
       <a href="{% url 'random_student' %}" class="elevated-button">Random Student</a>
     </div>
+    <div class="card">
+      <a href="{% url 'weather_get' %}" class="elevated-button">Weather App API</a>
+    </div>
+ 
+    
   </div>
-
+   
   <div class="bottom-panel">
     <a href="https://github.com/amuybar?tab=repositories" class="github-link">GitHub</a>
     <footer>&copy; PLP Hackthon Assignment</footer>

@@ -1,0 +1,111 @@
+/* weather.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1597ee;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  border: 10px solid #003cff;
+  margin: 7% auto;
+  height: 100%;
+  border-radius: 15px;
+}
+
+
+.navbar {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+}
+
+.elevated-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.elevated-button:hover {
+  background-color: #0056b3;
+}
+
+.body-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.weather-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+}
+
+.weather-card h1 {
+  color: #4CAF50;
+}
+
+.weather-card strong {
+  font-weight: bold;
+}
+
+.weather-card::before {
+  content: "";
+  background-image: url('https://www.transparenttextures.com/patterns/axiom-pattern.png');
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .body-content {
+    padding: 10px;
+  }
+
+  .weather-card {
+    width: 90%;
+  }
+}

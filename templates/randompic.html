@@ -23,19 +23,21 @@
 </head>
  
 <body>
-  <nav class="navbar">
-    <a class="back-button" href="/">Back</a>
-    <h1>Random Pictures</h1>
-  </nav>
-
-  <div class="body-content">
-
-    <button class="elevated-button" onclick="generatePics()">Press Here to generate random Dog Pictures</button>
-    <div class="image-card">
-      <img src="{{dog}}" alt="">
-    </div>
-    <div class="spin-count-card">
-      <p>Randoms Spun: {{pic_count}}</p>
+  <div class="container">
+    <nav class="navbar">
+      <a class="back-button" href="/">Back</a>
+      <h1>Random Pictures</h1>
+    </nav>
+  
+    <div class="body-content">
+  
+      <button class="elevated-button" onclick="generatePics()">Press Here to generate random Dog Pictures</button>
+      <div class="image-card">
+        <img src="{{dog}}" alt="">
+      </div>
+      <div class="spin-count-card">
+        <p>Randoms Spun: {{pic_count}}</p>
+      </div>
     </div>
   </div>
 </body>

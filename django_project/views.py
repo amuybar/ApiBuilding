@@ -89,7 +89,34 @@ def generate_random_student(request):
       return render(request, 'error.html', {'error_message': error_message})
 
 
+# -----------Functioin to fetch weather API -----------
 
+# --------------------------------------------------------
+# this function gets weather of a city, we randomize the city selected
+def get_weather(city):
+    api_key = 'd901fb5d4743427a945221819242404'
+    if city:
+        api_url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}'
+    else:
+        # List of cities for random selection
+        cities = ['Nairobi', 'New York', 'London', 'Tokyo', 'Sydney','Lagos', 'San Francisco', 'Mumbai','Kampala','Tunis' ]
+        random_city = random.choice(cities)
+        api_url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={random_city}'
+    
+    response = requests.get(api_url)
+    if response.status_code == 200:
+        weather = response.json()
+        return weather
+    else:
+        return None
+# function to pass the data to the view being rendered
+def weather_get(request, city=None):
+    weather = get_weather(city)
+    if weather:
+        return render(request, 'templates/weather.html', {'weather': weather})
+    else:
+        error_message = "Failed to fetch weather data from the API"
+        return render(request, 'error.html', {'error_message': error_message})
 
 
 

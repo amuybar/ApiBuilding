@@ -23,18 +23,23 @@ urlpatterns = [
   # path to index/home page
     path('', views.index, name='index'),
   # path to random dog pictures
-    path('dog/', views.dog_view, name='dog_view'),
+    path('dog/', views.generete_dog, name='dog_view'),
   # this will generate new facts and incriment the count
     path('generate_dogs/', views.generete_dog, name='generete_dog'),
   # path to random facts
-   path('fact/', views.fact_view, name='fact_view'),
+   path('fact/', views.generate_facts, name='fact_view'),
   # this will generate coont and new facts
     path('generate_facts/', views.generate_facts, name='generate_facts'),
   # path to rando student page 
-    path('student/', views.random_student, name='random_student'),
+    path('student/', views.generate_random_student, name='random_student'),
   # this is a path to generate random student function
   # when its called the function executes
     path('generate_random_student/',
          views.generate_random_student,
-         name='generate_random_student')
+         name='generate_random_student'),
+  # path to weather page
+      path('weather/', views.weather_get, name='weather_get'),
+  # path to weather page
+    path('get_weather/', views.weather_get, name='get_weather'),
+  
 ]

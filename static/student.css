@@ -8,7 +8,15 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #5adbbb;
+}
+
+.container {
+  width: 60%;
+  background-color: white;
+  border: 10px solid #058171;
+  margin: 9% auto;
+  border-radius: 16px;
 }
 
 
@@ -25,6 +33,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
 
 .elevated-button {
   background-color: #007bff;
@@ -53,21 +62,19 @@ body {
   background-color: #fff;
   border-radius: 10px;
   padding: 1.5rem;
+  width: 500px;
+  height: 500px;
   margin-top: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
   text-align: center;
 }
+
+
 
 .spin-count-card {
   background-color: #f0f0f0;
   border-radius: 5px;
   padding: 0.5rem 1rem;
-
+  margin-top: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media only screen and (max-width: 600px) {
-  .body-content {
-    padding: 1rem;
-  }
 }
