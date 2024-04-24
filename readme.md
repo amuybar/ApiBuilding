@@ -10,16 +10,23 @@ Make sure to use the comments in the files to complete the hackathon
 To run this project locally, follow these steps:
 
 # 1. Clone the Repository
+```bash
   git clone https://github.com/amuybar/ApiBuilding.git
 
 #2. Install Dependencies
 Ensure you have Python and pip installed on your system. Then, navigate to the project directory and install the required packages:
 
+  ```bash
   pip install django
+  ```
+  ```bash
   pip install requests
+  ```
 
 # 3. Run the Server
+    ```
     python manage.py runserver
+    ```
 
  
 # Structure of the Assignment
