@@ -16,14 +16,14 @@ It contains [5] pages
     <> [Randomstudent.html] ---> Our last page which displays a card of student details displayed at random.It alse have a generate button and a count card to keep track of number of time we generated.
 
 
-#Screenshot of the the Index page <COREPAGE/>
+#Screenshot of the Index Page
+![Index Page](/static/readme_images/image.png)
+This is the core page of the project.
 
-![image](image.png)
+#Screenshot of the Random Dog Page
+![Random Dog Page](/static/readme_images/image_2.png)
+This page displays random dog images.
 
-
-#Screenshot of the the random dog page <Random Dog/>
-
-![image](image_2.png)
-
-
-#Screenshot of the the random dog page <Random Dog/>
+#Screenshot of the Random Student Page
+![Random Student Page](/static/readme_images/student_small.png)
+This page displays random student details.
