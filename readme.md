@@ -10,18 +10,21 @@ To run this project locally, follow these steps:
 # 1. Clone the Repository
 bash
 Copy code
-<> git clone [<repository-url>](https://github.com/amuybar/ApiBuilding.git)
+
+<> git clone https://github.com/amuybar/ApiBuilding.git
 
 #2. Install Dependencies
 Ensure you have Python and pip installed on your system. Then, navigate to the project directory and install the required packages:
 
 Copy code
+
 <>pip install django
 
 <>pip install requests
 
 # 3. Run the Server
 Copy code
+
 <>python manage.py runserver
 
  
