@@ -30,7 +30,9 @@
   <div class="body-content">
      <button class="elevated-button" onclick="generateRandomFacts()">Press Here to generate random Factts qoutes</button>
     <div class="fact-card">
-      <p>{{fact}}</p>
+      <h2>Fact Quote:  {{fact.text}}</h2>
+       <h3>Fact Source:  {{fact.source}}</h3>
+      <p>Source URL: <a href='{{fact.source_url}}'>fact link</a> </p>
     </div>
     <div class="spin-count-card">
       <p>Randoms Spun: {{fact_count}}</p>

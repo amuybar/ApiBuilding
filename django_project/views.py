@@ -29,8 +29,8 @@ def generate_facts(request):
   global fact_count
   fact_count +=1
   res_fact = requests.get('https://uselessfacts.jsph.pl/random.json?language=en')
-  fact_data = res_fact.json()
-  fact = fact_data['text']
+  fact = res_fact.json()
+ 
   return render(request, 'templates/randomfact.html', 
                           { 'fact': fact,
                           "fact_count":fact_count})
